@@ -4,33 +4,87 @@
 		<title>GaboorStudio</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="scripts.js">
 		
 	</head>
 	
 	
-	<body style="background-color:#2E2E2E">
-		
-		
-		<!--Headings is h1 to h6 from most important to least-->	
-		<h1 class="style_head">Gaboor Studio</h1>
+	<body class="bg">
+
+		<button class="style_button" style="padding: 0px" onclick="nightMode()">
+			<img src="night_mode_button.png" width="50px" height="50px">
+		</button>
+		<p style="color:cornsilk"></p>
+		<script>var n=0;
+			function nightMode() {
+				var x;
+				n=n+1;
+ 				if(n%2==0){
+					x=document.getElementsByClassName("bg");
+					x[0].style.background="rgba(46,46,46,1.00)";
+					
+					x= document.getElementsByClassName("style_text_eng");
+					for (var i = 0; i < x.length; i++) {
+	  					x[i].style.color = "gold";
+  					}
+	    			x= document.getElementsByClassName("style_text_per");
+  					for (var i = 0; i < x.length; i++) {
+	  					x[i].style.color = "gold";
+  					}
+					x= document.getElementsByClassName("style_head");
+					for (var i = 0; i < x.length; i++) {
+	  					x[i].style.color = "firebrick";
+  					}
+	    			
+				}
+				else{
+					x=document.getElementsByClassName("bg");
+					x[0].style.background="cornsilk";
+					
+					x= document.getElementsByClassName("style_text_eng");
+					for (var i = 0; i < x.length; i++) {
+	  					x[i].style.color = "black";
+  					}
+					x= document.getElementsByClassName("style_text_per");
+  					for (var i = 0; i < x.length; i++) {
+						x[i].style.color = "black";
+  					}
+					x= document.getElementsByClassName("style_head");
+					for (var i = 0; i < x.length; i++) {
+	  					x[i].style.color = "aqua";
+  					}
+				}				
+			}
+		</script>
+		<h1 class="style_head" style="text-align: center">Gaboor Studio</h1>
 
 	
-		<p class="style_text_eng">Gaboor Studio was founded in 2019 <br>This company has a lot to offer :) </p>
-		
-		<p class="style_text_per">
-			<button onclick="location.href='https://www.google.com/search?q=Gaboor+Studio'" class="style_button"><img  src="google_logo.png" class="style_pic"></button>
-			!درباره ما در گوگل بخوانید</p>
-		
+		<p class="style_text_eng" style="text-align: center">
+			Gaboor Studio was founded in 2019 <br>This company has a lot to offer :) 
+		</p>
 		
 		
 		<!--a line seperate two scope-->	
 		<hr>	
 		
+		<h1 class="style_head" style="text-align: left">About us</h1>
+		
+		
+		<p class="style_text_per">
+			<button onclick="location.href='https://www.google.com/search?q=Gaboor+Studio'" class="style_button" style="padding: 10px">
+				<img  src="google_logo.png" width="50px" height="50px">
+			</button>
+			!درباره ما در گوگل بخوانید
+		</p>
+		
+		
+		
 		<p class="style_text_eng">
-			<button onclick="location.href='ali_ansari.html'" class="style_button"><img  src="IMG_20190121_114251_164.jpg" class="style_pic"></button>
-			Ali Ansari</p>
-		
-		
+			<button onclick="location.href='ali_ansari.html'" class="style_button" style="padding: 0px">
+				<img  src="IMG_20190121_114251_164.png" width="100px" height="100px">
+			</button>
+			Ali Ansari
+		</p>
 		
 	</body>
 

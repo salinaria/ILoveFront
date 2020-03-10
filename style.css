@@ -1,40 +1,28 @@
 @charset "utf-8";
-/* CSS Document */
 .style_head{
 	color:firebrick;
-	font-family:Tahoma;
-	text-align: center;
+	font-family:Arial;
 }
-p.style_text_eng{
+.style_text_eng{
 	color:gold;
 	font-family: Arial;
-	text-align: center;
 }
 .style_text_per{
-	color: tomato;
+	color: gold;
 	font-family: "B Nazanin";
-	font-size: 150%;
-}
-.style_button{
-    font-size: 15px;
-    border-radius: 100%;
-    background-color: #2D455D;
-    padding: 15px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.6s;
-    border: 1px solid #2D455D;
-    border-style: dotted;
-}
-.style_button:hover {
-    box-shadow: 0px 5px 5px 0px black;
 }
 
-.style_pic{
-	float:right;
-	width: 50px;
-	height: 50px;
+.style_button{
+    border-radius: 100%;
+    background-color: #2D455D;
+    transition-duration: 0.5s;
+    border:none;
+    border-style:none;
 }
-.style_link{
-	color: chartreuse;			
+.style_button:hover {
+    box-shadow: 0px 25px 25px 0px black;
+}
+.bg{
+	background:rgba(46,46,46,1.00);
 }
 
