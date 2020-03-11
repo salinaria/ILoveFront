@@ -1,12 +1,139 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Ali Ansari</title>
-		<link rel="stylesheet" href="style.css">	
-	</head>
+<head>
+<title>Ali Ansari</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-	<body style="background-color:#2E2E2E">
-		<p class="style_text_eng">Hello I am Ali Ansari</p>
-	</body>
+<!-- Header -->
+<div class="header">
+  <img src="GaboorLogo.png" alt="gaboor logo" width="40%" height="40%">
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="Main.html">Home</a>
+  <a href="#">Contact Us</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>About Us</h2>
+    <p>
+			<button onclick="location.href='https://www.google.com/search?q=Gaboor+Studio'" class="button" style="padding: 10px">
+				<img  src="google_logo.png" alt="search in google" width="50px" height="50px">
+			</button>
+			Read about us on Google
+	</p>
+	<h3>Developers</h3>
+	<p>
+			<button onclick="location.href='ali_ansari.html'" class="button" style="padding: 0px">
+				<img  src="about_main.png" alt="about ali ansari" width="100px" height="100px">
+			</button>
+			Ali Ansari
+	</p>
+    
+    </div>
+	
+	
+  	<div class="main">
+    	<h2>Ali Ansari</h2>
+    	<h5>March 11, 2020</h5>
+	  	<div><img src="about_ali.jpg" alt="my picture" width="100%" height="400px"></div>
+    		<p>Hello! <br>I was born in 2001<br>I graduated in Helli1 and now study ComputerEngineering at Amirkabir university</p>
+    	<br>
+	</div>
+	
+  <div class="side">
+	  
+	  <button class="button" style="padding: 10px" onclick="nightMode()">
+			<img id="night" src="nightmode.png" width="50px" height="50px">
+		</button>
+		<p style="color:cornsilk"></p>
+		<script>
+			var n=0;
+			function nightMode() {
+				var x;
+ 				n=n+1;
+				if(n%2==0){
+					x= document.getElementsByClassName("header");
+  					for (var i = 0; i < x.length; i++) {
+	  					x[i].style.backgroundColor = "rgba(26,188,156,1.00)";
+						x[i].style.color ="white";
+  					}
+					x= document.getElementsByClassName("navbar");
+  					for (var i = 0; i < x.length; i++) {
+	  					x[i].style.backgroundColor ="rgba(51,51,51,1.00)";
+						x[i].style.color = "white";
+  					}
+					x= document.getElementsByClassName("side");
+  					for (var i = 0; i < x.length; i++) {
+	  					x[i].style.backgroundColor = "rgba(241,241,241,1.00)";
+						x[i].style.color="black";
+  					}
+					x= document.getElementsByClassName("main");
+					for (var i = 0; i < x.length; i++) {
+	  					x[i].style.backgroundColor = "white";
+						x[i].style.color="black";
+  					}
+					x= document.getElementsByClassName("footer");
+  					for (var i = 0; i < x.length; i++) {
+	  					x[i].style.backgroundColor = "rgba(26,188,156,1.00)";
+						x[i].style.color="white";
+  					}
+					x= document.getElementsByClassName("button");
+  					for (var i = 0; i < x.length; i++) {
+	  					x[i].style.backgroundColor = "rgba(26,188,156,1.00)";
+  					}
+					pic="nightmode.png";
+					document.getElementById("night").src=pic;
+				}
+				else{
+					x= document.getElementsByClassName("header");
+  					for (var i = 0; i < x.length; i++) {
+	  					x[i].style.backgroundColor = "rgba(81,29,124,1.00)";
+						x[i].style.color ="white";
+  					}
+					x= document.getElementsByClassName("navbar");
+  					for (var i = 0; i < x.length; i++) {
+	  					x[i].style.backgroundColor ="rgba(74,71,74,1.00)";
+						x[i].style.color = "white";
+  					}
+					x= document.getElementsByClassName("side");
+  					for (var i = 0; i < x.length; i++) {
+	  					x[i].style.backgroundColor = "rgba(46,46,46,1.00)";
+						x[i].style.color="white";
+  					}
+					x= document.getElementsByClassName("main");
+					for (var i = 0; i < x.length; i++) {
+	  					x[i].style.backgroundColor = "rgba(51,51,51,1.00)";
+						x[i].style.color="white";
+  					}
+					x= document.getElementsByClassName("footer");
+  					for (var i = 0; i < x.length; i++) {
+	  					x[i].style.backgroundColor = "rgba(81,29,124,1.00)";
+						x[i].style.color="white";
+  					}
+					x= document.getElementsByClassName("button");
+  					for (var i = 0; i < x.length; i++) {
+	  					x[i].style.backgroundColor = "rgba(81,29,124,1.00)";
+  					}
+					pic="daymode.png";
+					document.getElementById("night").src=pic;
+				}
+			}
+		</script>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <h5 style="color: whitesmoke">© 2020 GaboorStudio, Inc.</h5>
+</div>
+
+</body>
 </html>

@@ -1,28 +1,86 @@
 @charset "utf-8";
-.style_head{
-	color:firebrick;
-	font-family:Arial;
-}
-.style_text_eng{
-	color:gold;
-	font-family: Arial;
-}
-.style_text_per{
-	color: gold;
-	font-family: "B Nazanin";
+* {
+  box-sizing: border-box;
 }
 
-.style_button{
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background:rgba(26,188,156,1.00);
+  color: "white";
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color:rgba(51,51,51,1.00);
+  color: "white";
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color:rgba(221,221,221,1.00);
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 20%;
+  background-color:rgba(241,241,241,1.00);
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 60%;
+  background-color: white;
+  padding: 20px;
+  color: black;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background:rgba(26,188,156,1.00);
+  color: "white";
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+.button{
     border-radius: 100%;
-    background-color: #2D455D;
+    background-color:rgba(26,188,156,1.00) ;
     transition-duration: 0.5s;
     border:none;
     border-style:none;
 }
-.style_button:hover {
-    box-shadow: 0px 25px 25px 0px black;
+.button:hover {
+    box-shadow: 0px 15px 15px 0px #333;
 }
-.bg{
-	background:rgba(46,46,46,1.00);
-}
-
